@@ -1,0 +1,54 @@
+package com.mandiri.handson_oop;
+
+import com.mandiri.handson_oop.shape.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Triangle segitiga = new Triangle(2.0, 3.0);
+        System.out.println(segitiga);
+        System.out.println(segitiga.getSurface());
+        System.out.println();
+
+        Circle lingkaran = new Circle(4.0);
+        System.out.println(lingkaran);
+        System.out.println(lingkaran.getSurface());
+        System.out.println();
+
+        Circle lingkaran2 = new Circle(5.0);
+        System.out.println(lingkaran2);
+        System.out.println(lingkaran2.getSurface());
+        System.out.println();
+
+//        Double[] arrSurface = {segitiga.getSurface(), lingkaran.getSurface()};
+        Shape[] arrShape = {segitiga, lingkaran, lingkaran2};
+
+        ShapeCalculate calculate = new ShapeCalculate();
+        System.out.print("total : ");
+        System.out.println(calculate.totalSurface(arrShape));
+
+
+//        Rectangle rect = new Rectangle(7.0,3.0);
+//        System.out.println(rect);
+//        System.out.println("Keliling persegi panjang = " + rect.getRound());
+//        System.out.println("Luas persegi panjang = " + rect.getSurface());
+//        System.out.println();
+//
+//        Block blok = new Block(3.0, 4.0, 5.0);
+//        System.out.println(blok);
+//        System.out.println("Keliling balok = " + blok.getSurface());
+//        System.out.println("Luas balok = " + blok.getRound());
+//        System.out.println("Volume balok = " + blok.getVolume());
+//        System.out.println();
+//
+//        Rectangle rect1 = new Block(1.0, 2.0, 3.0);
+//        System.out.println(rect1);
+//        System.out.println();
+//
+//        Object object = new Block(2.0, 4.0, 6.0);
+//        System.out.println(object);
+//        System.out.println();
+//
+//        Block block2 = (Block) new  Rectangle(7.0, 5.0);
+//        System.out.println(block2);
+    }
+}
